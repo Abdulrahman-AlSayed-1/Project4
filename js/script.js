@@ -156,7 +156,7 @@ class Product
         const addBtn = item.querySelector(`#add-btn-${this.get_data.count}`); 
         addBtn.addEventListener('click', () =>{   //arrow function does not have its own 'this' so 'this' points to class instance not element of event 
           if(!localStorage.getItem('remember-me'))
-            location.assign('login.html');
+            location.assign('Login.html');
           else
             Product.add_to_cart(this, 1)
         }); 
@@ -167,7 +167,7 @@ class Product
         const heartIcon = item.querySelector(`#heart-${this.get_data.count}`);
         heartIcon.addEventListener('click', () => {
           if(!localStorage.getItem('remember-me'))
-            location.assign('login.html');
+            location.assign('Login.html');
           else
             Product.heartToggle(this);
         }); 
