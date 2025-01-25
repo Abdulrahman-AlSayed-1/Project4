@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping || Registration page</title>
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Varela+Round&display=swap" rel="stylesheet">
+    
+</head>
+<body >
+  <header>
+    <div class="container-fluid p-0">
+      <div class="navparent" style="border-radius: 3rem;  border-bottom: 1px #6a6d76 solid ;">
+       <a href="index.html" id="web-title" class="varela-round-regular">
+         online shopping 
+       </a>
+      </div> 
+    </div>
+  </header>
+  <main>
+    <div class="login_register-form rounded-circle shadow-lg">
+      <div class="row h-100">
+        <div class="col-md-6 half flex-column">
+          <h1 class="display-5 varela-round-regular">
+            Register
+          </h1>
+          <p class="text-success fw-bold">All your information is secure</p>
+          <p class="text-danger fw-bold" style="text-align: center;" id="error"></p>
+
+        </div>
+        <div class="col-md-6 half">
+           <form method="post" autocomplete="on" class=" row ">
+            <div class="col-6 col-md-12 form-padding-sm px-md-3">
+              <label for="first-name">First name :</label>
+              <input type="text" id="first-name" class="d-block col-11 col-md-9">
+            </div>
+            <div class="col-6 col-md-12 px-md-3">
+              <label for="last-name">Last name :</label>
+              <input type="text" id="last-name" class="d-block col-9" > 
+            </div>
+            <div class="col-6 col-md-12 form-padding-sm px-md-3" >
+              <label for="Email">Email address :</label>
+              <input type="email" id="Email" class="d-block  col-11 col-md-9"> 
+            </div>
+            <div class="col-6 col-md-12  px-md-3">
+              <label for="password">Password :</label>
+              <input type="password" id="password" class="d-block col-9">
+            </div>   
+            <p class="text-center text-md-start px-md-3">
+                Do you have an account?
+                <a href="Login.html" >
+                    log in
+                </a>
+            </p>
+            <input type="submit" value="Sign in" class="btn col-3 d-block mx-auto mx-md-3">
+           </form>
+        </div>
+      </div> 
+    </div>
+  </main>
+  <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/SignUp.js"></script>  
+</body>
+</html>

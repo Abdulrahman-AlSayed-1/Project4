@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping || Main page</title>
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Varela+Round&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <header>
+    <div class="container-fluid p-0">
+      <div class="navparent navbar navbar-expand-sm">
+       <a href="index.html" id="web-title" class="col-3 varela-round-regular">
+         online shopping    
+       </a>
+       <span id="username" class="d-none"></span>
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+       </button>
+       <nav  class="collapse navbar-collapse mt-only-sm" id="mynavbar" style="flex-grow: 0;">
+        <ul id="nav-menu">
+          <li id="cart" class="d-none ms-auto">
+            <i class="fa-solid fa-cart-shopping fs-4 me-2" style="position: relative;">
+              <span id="sign" class="rounded-circle bg-danger d-none"></span>
+            </i>
+            <span class="fw-bold">Cart</span>
+            <i id="cart-arrow" class="fa-solid fa-caret-down fs-6"></i>
+          </li>
+          <li id="register" class="ms-auto">
+              <a href="SignUp.html">
+                  Register
+              </a>
+          </li>
+          <li id="login">
+              <a href="Login.html">
+                  Login
+              </a>
+          </li>
+          <li id="logout" class="d-none">
+            <a href="register.html">
+              Log out
+            </a>
+          </li>
+        </ul>
+       </nav> 
+      </div> 
+     </div>
+
+     <div class="container-fluid " id="search-container">
+       <form id="search-form" class="row mx-auto">
+         <select id="search-type" class="col-8 col-md-4 col-lg-3">
+          <option value="default" hidden>Select a Search Type</option>
+          <option value="name">Search by Name</option>
+          <option value="category">Search by Category</option>
+         </select>
+         <input class="m-0 col-8 col-md-4 col-lg-3" type="search" placeholder="select a search type first" disabled>
+       </form>
+     </div>   <!-- search div end -->
+     
+  </header>  
+
+ <!-- //////////////////////// -->
+
+  <div id="cart-container">
+    <ul id="added-products">
+      <span class="mx-auto fw-bold">Cart is Empty</span>
+    </ul>
+    <div id="cart-nav" class="d-flex justify-content-end mt-2">
+      <a id="cart-link" href="ShoppingCart.html" class="rounded-circle p-2" data-bs-toggle="tooltip" title="View all Products" data-bs-placement="left">
+        <i class="fa-solid fa-link"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- ////////////////////// -->
+
+  <main>
+    <div class="container p-0 mt-5">
+      <div id="products" class="justify-content-center justify-content-md-start">
+      
+      </div> 
+    </div> 
+  </main> 
+
+  <footer class="text-center mt-5">
+    <p style="font-size: large; font-variant: small-caps;">
+      copyright <small>&copy;</small>
+      <span id="year" style="font-size: 0.75em;"></span>
+       a. al-sayed.
+       all rights reserved.
+    </p>
+  </footer>
+
+  <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>  
+  <script>
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+  </script>
+</body>
+</html>
