@@ -17,7 +17,7 @@ if(localStorage.getItem('remember-me'))
 logout.addEventListener('click',()=>{
         localStorage.clear()
 
-    setTimeout(()=>{location.assign('Login.html'),500})
+    setTimeout(()=>{location.assign('Login.html'),500});
 })
 class Cart{
     static added_products=document.getElementById('added-products')    
